@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-decoration: none;
+
+        }
+
+        .nav-bar {
+            display: flex;
+            background-color: #2A49B5;
+            color: whitesmoke;
+            padding: 1em;
+            justify-content: space-around;
+            gap: 40em;
+        }
+
+        .nav-bar a {
+            color: whitesmoke;
+        }
+
+        .nav-bar-right {
+            display: flex;
+            gap: 1em;
+        }
+
+        .first-search-icon p {
+            display: flex;
+
+        }
+
+        .first-search-icon input {
+            padding: 4px;
+            border-radius: 47px;
+            padding-left: 2.5em;
+        }
+
+        .first-search-icon p img {
+            position: relative;
+            right: -27px;
+            height: 1.2em;
+            width: 1.1em;
+            padding-top: 5px;
+
+        }
+
+        .first-nav-user p img {
+            width: 12px;
+            height: 14px;
+        }
+
+        .first-nav-user p {
+            display: flex;
+            gap: 4px;
+        }
+
+        .second-nav ul {
+            color: #424141;
+            background-color: #F5F5F5;
+            display: flex;
+            justify-content: space-around;
+            padding: 1em;
+        }
+
+        .second-nav ul li,
+        .second-nav-dropdown span {
+            display: flex;
+            padding-top: 10px;
+        }
+
+        .second-nav-dropdown span img {
+            width: 15px;
+            height: 13px;
+            padding-top: 3px;
+
+        }
+
+        .second-nav ul li a {
+            color: #424141;
+        }
+
+        .second-nav ul li:hover,
+        .second-nav ul li a:hover,
+        .second-nav-dropdown span:hover {
+            transition: all 0.2s;
+            color: #2A49B5;
+        }
+
+        .dropdown-container {
+            background-color: rgba(217, 217, 217, 1);
+        }
+
+        .dropdown-container span {
+            color: black;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .dropdown-container span:hover {
+            transition: all 0.2s;
+            color: rgba(163, 23, 23, 1);
+        }
+
+        .second-nav-dropdown .dropdown-container {
+            display: none;
+            position: absolute;
+        }
+
+        /* .second-nav-dropdown.active.dropdown-container {
+            display: flex;
+            flex-direction: column;
+        } */
+
+        .second-nav-dropdown:hover .dropdown-container{
+    display:flex;
+    flex-direction: column;
+   }
+    </style>
+   
+</head>
+
+<body>
+   
+    <nav>
+        <div class="nav-bar">
+
+            <a href="#">info@college.com</a>
+            <div class="nav-bar-right">
+                <div class="nav-icons">
+                    <img src="./assets/facebook.png" />
+                    <img src="./assets/instagram.png" />
+                    <img src="./assets/twiter.png" />
+                    <img src="./assets/whatsapp.png" />
+                </div>
+                <div class="first-search-icon">
+                    <p> <img src="./assets/search2.png" /><input type="text" placeholder="Text Here......" /></p>
+                </div>
+                <div class="first-nav-user">
+                    <p> <img src="./assets/user.png" />login/register</p>
+                </div>
+            </div>
+        </div>
+        <div class="second-nav">
+            <ul>
+                <img class="logo" src="./assets/logo.png" />
+                <li>Home</li>
+                <li>
+                    <a href="2ndpage.html">Colleges</a>
+                </li>
+                <li>Schools</li>
+                <li><a href="admission-page.html">Admission</a></li>
+                <li>Institutes</li>
+                <li>Scholarships</li>
+                <li>Articles</li>
+                <li>Exams</li>
+                <li>News</li>
+                <li>Jobs</li>
+                <div class="second-nav-dropdown second-nav-lists">
+                    <span>Events <img src="./assets/dropdown.jpg" /></span>
+                    <li>
+                        <div class="dropdown-container ">
+
+                            <span>Sports</span>
+                            <span>Healthcare</span>
+                            <span>Educational Tour</span>
+                            <span>OJT trainning</span>
+                            <span>Motivational Speech</span>
+
+
+                        </div>
+                    </li>
+
+                </div>
+                <li>Results</li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+</body>
+<script>
+    let dropbox= document.querySelectorAll(".second-nav-dropdown");
+dropbox.forEach(secondnavdropdown=> {
+        secondnavdropdown.addEventListener("click", () => {
+            secondnavdropdown.classList.toggle("active");
+        })
+    })
+</script>
+
+</html>

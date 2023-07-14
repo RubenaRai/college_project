@@ -1,0 +1,270 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+
+}
+.main{
+    background-color: #EDE9E9;
+    background-image: url("./assets/sportsbackground.png");
+    
+}
+
+.first-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2A49B5;
+    color: white;
+    padding-top: 1em;
+    padding-bottom:1em ;
+
+}
+
+.first-search-icon input {
+    border-radius: 57px;
+    background-color: #EDE9E9;
+}
+
+.first-nav-user {
+    display: flex;
+    align-items: center;
+}
+
+.first-nav-user .icon-user {
+    height: 17px;
+    width: 14px;
+}
+
+.second-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #F5F5F5;
+    color: #424141;
+    /* padding:1.5em; */
+    align-items: center;
+    cursor: pointer;
+    padding-top: 1em;
+    padding-bottom:1em ;
+
+
+}
+
+.second-nav li:hover {
+    transition: 0.5ms;
+    color: #0F2E97;
+}
+
+a {
+    color: white;
+}
+
+.logo {
+    width: 145px;
+    height: 45px;
+}
+
+.second-nav-dropdown .dropdown {
+    width: 15px;
+    height: 13px;
+
+}
+.second-nav-dropdown{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    gap:0.2rem; 
+
+}
+.second-nav-lists{
+    display: inline-block;
+    position: relative;
+
+}
+.second-nav-lists:hover .dropdown-container{
+    display: block;
+    position: absolute;
+}
+.dropdown-container{
+    display: none;
+}
+img{
+    width: 27px;
+    height: 28px;
+}
+input{
+    width: 250px;
+    height: 28px;
+    /* padding-left: 10px; */
+}
+.first-search-icon{
+    display: flex;
+    /* padding-left: 10em; */
+}
+.advertise-img .img-source ,.img-source2 {
+    width: 50em;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+.advertise-img div {
+    display: flex;
+    justify-content: center;
+    
+}
+.advertise-img .img-source2{
+    margin-bottom: 3em;
+}
+
+
+.marquee{
+    display:flex;
+    color:rgba(213, 245, 89, 1);
+    font-size: 1.5em;
+    font-weight: 600;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: #11ABCD;
+    column-gap: 5em;
+    margin-top: 2em;
+}
+/* .footer-left{
+    display: flex;
+     gap: 2rem; 
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+} */
+.footer-left{
+    display:flex;
+    gap:4rem;
+    padding: 2em;
+    color:white;
+    
+}
+.footer-left p:hover{
+    transition:all 2ms;
+    color:black;
+}
+.footer-left h4,.footer-left p{
+    margin:10px;
+    
+}
+ hr{
+    padding-top: 1px;
+    color:rgba(221, 218, 218, 0.603);
+    border: 1px solid rgba(221, 218, 218, 0.733);
+}
+
+.footer-right{
+    border: 1px solid rgba(221, 218, 218, 0.603);
+    display: flex;
+    flex-direction:column;
+    padding:1.5em;
+    color:whitesmoke;
+    
+}
+
+
+.footer-right input{
+    display: flex;
+    flex-direction:column;
+    margin:1em;
+    background-color: #11ABCD;
+    color:rgb(255, 253, 253);
+    border: 1px solid whitesmoke;
+
+}
+.footer-right input:hover{
+    transition:all 2ms;
+    color:black;
+}
+
+.footer-right h3{
+    padding-bottom: 10px;
+    display:flex;
+    justify-content: center;
+}
+.footer-right p{
+    display: flex;
+    justify-content: right;
+    padding-top: 1em;
+}
+.footer-right p:hover{
+    transition:all 2ms;
+    color:black;
+    display: flex;
+    justify-content: right;
+    
+}
+/* //flip// */
+
+ .flip-image-container img{
+    height:23em;
+    width:18em;
+}
+.flip-image-container{
+    width:18em;
+    height:23em;
+    
+}
+.front-flip-image-container, .back-flip-image-container{
+    position:absolute;
+    backface-visibility: hidden;
+}
+
+.inner-flip-image-container{
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    position: relative;
+}
+.flip-image-container:hover .inner-flip-image-container{
+    transform: rotateY(180deg);
+}
+
+.back-flip-image-container {
+    transform: rotateY(180deg);
+    top: 18rem;
+    left: 8rem;
+
+}
+.back-flip-image-container img{
+    height: 20px;
+    width:20px;
+}
+.back-flip-image-container h1,h2{
+    background-color: whitesmoke;
+    /* transition: bounce .3s ease-out; */
+    animation: bounce 3.3s ease-in-out infinite;
+    border: 2rem solid red;
+    
+
+}
+.back-flip-image-container{
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+
+}
+.flip{
+    display:flex;
+    gap:1em;
+    flex-wrap: wrap;
+}
+
+@keyframes bounce {
+    0%{
+        transform: translateY(-30rem);
+    }
+    100%{
+        transform: translateY(-15px);
+        left: 15rem;
+    position: relative;
+    transition: 40s;
+    }
+}

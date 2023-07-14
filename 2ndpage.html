@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- <script>
+        const scroll=document.querySelectorAll(".affilated-container");
+scroll.forEach(affilated-container => {
+    affilated-container.addEventListener("click",() =>{
+        affilated-container.classList.toggle("active");
+    })
+})
+    </script> -->
+    <nav>
+        <ul class="first-nav">
+            <a href="#">info@college.com</a>
+            <div class="nav-icons">
+                <img src="./assets/facebook.png" />
+                <img src="./assets/instagram.png" />
+                <img src="./assets/twiter.png" />
+                <img src="./assets/whatsapp.png" />
+            </div>
+            <div class="first-search-icon">
+                <img class="nav-search" src="./assets/search.png" />
+                <input type="text" placeholder="Text Here......" />
+            </div>
+            <div class="first-nav-user">
+                <img class="icon-user" src="./assets/user.png" />
+                <li>login/register</li>
+            </div>
+        </ul>
+        <ul class="second-nav">
+            <img class="logo" src="./assets/logo.png" />
+            <li>
+                <a href="project.html">Home</a>
+            </li>
+            <li>
+                <a href="2ndpage.html">Colleges</a>
+            </li>
+            <li>Schools</li>
+            <li> <a href="admission-page.html">Admission</a></li>
+            <li>Institutes</li>
+            <li>Scholarships</li>
+            <li>Articles</li>
+            <li>Exams</li>
+            <li>News</li>
+            <li>Jobs</li>
+            <div class="second-nav-dropdown second-nav-lists">
+                <span class="events-tag">Events <img class="dropdown" src="./assets/dropdown.jpg" /></span>
+                <li>
+                    <div class="dropdown-container ">
+                        <ul>
+                            <li>Sports</li>
+                            <li>Healthcare</li>
+                            <li>Educational Tour</li>
+                            <li>OJT trainning</li>
+                            <li>Motivational Speech</li>
+
+                        </ul>
+                    </div>
+                </li>
+
+            </div>
+            <li>Results</li>
+
+        </ul>
+
+
+    </nav>
+    <!-- ..........navigation-bar-end.............  -->
+    <div class="main-sub-page">
+        <div class="advertise-img ">
+            <div>
+                <img src="./assets/advertise.gif" class="img-source" />
+            </div>
+            <div>
+                <img src="./assets/adv..gif" class="img-source2" />
+
+            </div>
+        </div>
+        <!-- .........scroll section start........ -->
+        <h1>Colleges in Nepal</h1>
+        <div class="scroll">
+            <div class="list-container-city">
+                <p><img src="./assets/filter.png">FILTER</p>
+                <div class="city-name-container">
+                    <p><img src="./assets/location.png">CITY</p>
+                        <div class="city">
+                        <span><input type="radio" />All</span>
+                        <span><input type="radio" />Achham</span>
+                        <span><input type="radio" />Arghakhanchi</span>
+                        <span><input type="radio" />Baglung</span>
+                        <span><input type="radio" />Baitadi</span>
+                        <span><input type="radio" />Bajhang</span>
+                        <span><input type="radio" />Bajura</span>
+                        <span><input type="radio" />Banke</span>
+                        <span><input type="radio" />Bara</span>
+                        <span><input type="radio" />Bardiya</span>
+                        <span><input type="radio" />Bhaktapur</span>
+                        <span><input type="radio" />Bhojpur</span>
+                        <span><input type="radio" />Biratnagr</span>
+                        <span><input type="radio" />Birjunj</span>
+                        <span><input type="radio" />Butwal</span>
+                        <span><input type="radio" />Chitwan</span>
+                        <span><input type="radio" />Dadeldhura</span>
+                        <span><input type="radio" />Dailekh</span>
+                        <span><input type="radio" />Dang</span>
+                        <span><input type="radio" />Dhankuta</span>
+                        <span><input type="radio" />Jhapa</span>
+                    </div>
+                </div>
+                <div class="main-stream-name-container">
+                    <p><img src="./assets/mainstraem.png">MAIN STREAM</p>
+                    <div class="main">
+                        <span><input type="radio" />'A'Level</span>
+                        <span><input type="radio" />+2 Program</span>
+                        <span><input type="radio" />Agriculture</span>
+                        <span><input type="radio" />Architecture</span>
+                        <span><input type="radio" />Arts</span>
+                        <span><input type="radio" />Avation</span>
+                        <span><input type="radio" />Computer Application</span>
+                        <span><input type="radio" />Dental</span>
+                        <span><input type="radio" />Education</span>
+                        <span><input type="radio" />Engineering</span>
+                        <span><input type="radio" />Forestry</span>
+                        <span><input type="radio" />Hotel Management</span>
+                        <span><input type="radio" />Information Techonogy</span>
+                        <span><input type="radio" />Law</span>
+                        <span><input type="radio" />Management</span>
+                        <span><input type="radio" />Mass Communication</span>
+                        <span><input type="radio" />MBA Colleges</span>
+                        <span><input type="radio" />Medical</span>
+                        <span><input type="radio" />Nursing</span>
+                        <span><input type="radio" />Science</span>
+                        <span><input type="radio" />Travel and Tourism</span>
+                    </div>
+
+                </div>
+                <div class="affilated-container">
+                    <p><img src="./assets/affilated.png">AFFILATED BY</p>
+                    <div class="afilated">
+                        <span><input type="radio" />ACCA</span>
+                        <span><input type="radio" />Agriculture and Forestry University</span>
+                        <span><input type="radio" />Asia e University(AeU)</span>
+                        <span><input type="radio" />Asia Pacific University of Techonology </span>
+                        <span><input type="radio" />BSPKIHS</span>
+                        <span><input type="radio" />Cambridge Assessment International Education</span>
+                        <span><input type="radio" />CBSE, India</span>
+                        <span><input type="radio" />City and Guilds,UK</span>
+                        <span><input type="radio" />CTEVT</span>
+                        <span><input type="radio" />Far-western University (FU)</span>
+                        <span><input type="radio" />HELP University College</span>
+                        <span><input type="radio" />Institute of MEdicine(IOM)</span>
+                        <span><input type="radio" />ICE,India</span>
+                        <span><input type="radio" />IAU</span>
+                        <span><input type="radio" />MWU</span>
+                        <span><input type="radio" />NAMS</span>
+                        <span><input type="radio" />National Examinations Boards</span>
+                        <span><input type="radio" />Nepal Open University</span>
+                        <span><input type="radio" />Other</span>
+                        <span><input type="radio" />Purbanchal University</span>
+                        <span><input type="radio" />Pokhara University</span>
+                    </div>
+                </div>
+                <div class="course-name-container">
+                    <p><img src="./assets/mainstraem.png">COURSE TYPE</p>
+                    <div class="course">
+                        <span><input type="radio" />Bachelor Degree</span>
+                        <span><input type="radio" />Master Degree</span>
+                        <span><input type="radio" />Post Graduate Diploma</span>
+                        <span><input type="radio" />Dual Degree</span>
+                        <span><input type="radio" />Fellowship</span>
+                        <span><input type="radio" />Diploma</span>
+                        <span><input type="radio" />Certificate</span>
+                    </div>
+                    
+                </div>
+                <div class="course-fee-container">
+                    <p><img src="./assets/coursefee.png">COURSE FEE</p>
+                     <div class="fee">
+                        <span><input type="radio" />0-2000000</span>
+                        <span><input type="radio" />10000000-2000000</span>
+                        <span><input type="radio" />0-2000000</span>
+                        <span><input type="radio" />0-2000000</span>
+                        <span><input type="radio" />0-2000000</span>
+                        <span><input type="radio" />0-2000000</span>
+                        <span><input type="radio" />40000000-8000000</span>
+                        <span><input type="radio" />0-2000000</span>
+                        <span><input type="radio" />30000-8000000</span>
+                        <span><input type="radio" />0-2000000</span>
+                        <span><input type="radio" />6000000-7000000</span>
+                        <span><input type="radio" />0-2000000</span>
+                        <span><input type="radio" />0-2000000</span>
+                        <span><input type="radio" />0-2000000</span>
+                        <span><input type="radio" />0-2000000</span>
+
+                    </div>
+                    
+                </div>
+                <div class="type-clz-container">
+                    <p><img src="./assets/Framecolleges.png">TYPE OF COLLEGE</p>
+                     <div class="type">
+                    <span><input type="checkbox" />Public</span>
+                    <span><input type="checkbox" />Private</span>
+                    <span><input type="checkbox" />Community</span>
+                </div>
+                </div>
+                <div class="duration-container">
+                    <p> <img src="./assets/duration.png">DURATION</p>
+                    <div class="duration">
+
+                    <span><input type="radio" />2 years</span>
+                    <span><input type="radio" />3 years</span>
+                    <span><input type="radio" />4 years</span>
+                </div>
+                </div>
+            </div>
+            <!-- .............scroll section end............. -->
+            <div class="scroll-college-container">
+                <div class="college-container">
+                    <div class="image-text-container">
+                        <img cass="" src="./assets/informatics.png" />
+                        <p class="informatics-text">Informatics College Pokhara,</p>
+                        <p>Pokhara</p>
+
+                        <img class="location-img" src="./assets/location.png" />
+                        <p>Matepani,Pokhara</p>
+                    </div>
+                    <ul>
+                        <li>BBA in International Business</li>
+                        <li>B.Sc.(HONS) in computing</li>
+                        <li>BBA in marketing</li>
+                        <li>BBA in Accounting & Finance</li>
+
+                    </ul>
+                    <div class="img-text-contain">
+                        <img src="./assets/Vectorqueans.png" />
+                        <p>Ask Question</p>
+                        <img src="./assets/text-review.png" />
+                        <p>Text Review</p>
+                        <img src="./assets/courses.png" />
+                        <p>Courses</p>
+                        <img src="./assets/location.png" />
+                        <p>Contact</p>
+                        <p>Follow</p>
+                    </div>
+
+
+                </div>
+                <!-- .............**********.............. -->
+
+                <div class="college-container">
+                    <div class="image-text-container">
+                        <img cass="" src="./assets/informatics.png" />
+                        <p class="informatics-text">Informatics College Pokhara,</p>
+                        <p>Pokhara</p>
+
+                        <img class="location-img" src="./assets/location.png" />
+                        <p>Matepani,Pokhara</p>
+                    </div>
+                    <ul>
+                        <li>BBA in International Business</li>
+                        <li>B.Sc.(HONS) in computing</li>
+                        <li>BBA in marketing</li>
+                        <li>BBA in Accounting & Finance</li>
+
+                    </ul>
+                    <div class="img-text-contain">
+                        <img src="./assets/Vectorqueans.png" />
+                        <p>Ask Question</p>
+                        <img src="./assets/text-review.png" />
+                        <p>Text Review</p>
+                        <img src="./assets/courses.png" />
+                        <p>Courses</p>
+                        <img src="./assets/location.png" />
+                        <p>Contact</p>
+                        <p>Follow</p>
+                    </div>
+
+
+                </div>
+                <!-- .............**********.............. -->
+                <div class="college-container">
+                    <div class="image-text-container">
+                        <img cass="" src="./assets/informatics.png" />
+                        <p class="informatics-text">Informatics College Pokhara,</p>
+                        <p>Pokhara</p>
+
+                        <img class="location-img" src="./assets/location.png" />
+                        <p>Matepani,Pokhara</p>
+                    </div>
+                    <ul>
+                        <li>BBA in International Business</li>
+                        <li>B.Sc.(HONS) in computing</li>
+                        <li>BBA in marketing</li>
+                        <li>BBA in Accounting & Finance</li>
+
+                    </ul>
+                    <div class="img-text-contain">
+                        <img src="./assets/Vectorqueans.png" />
+                        <p>Ask Question</p>
+                        <img src="./assets/text-review.png" />
+                        <p>Text Review</p>
+                        <img src="./assets/courses.png" />
+                        <p>Courses</p>
+                        <img src="./assets/location.png" />
+                        <p>Contact</p>
+                        <p>Follow</p>
+                    </div>
+
+
+                </div>
+                <!-- .............**********.............. -->
+                <div class="college-container">
+                    <div class="image-text-container">
+                        <img cass="" src="./assets/informatics.png" />
+                        <p class="informatics-text">Informatics College Pokhara,</p>
+                        <p>Pokhara</p>
+
+                        <img class="location-img" src="./assets/location.png" />
+                        <p>Matepani,Pokhara</p>
+                    </div>
+                    <ul>
+                        <li>BBA in International Business</li>
+                        <li>B.Sc.(HONS) in computing</li>
+                        <li>BBA in marketing</li>
+                        <li>BBA in Accounting & Finance</li>
+
+                    </ul>
+                    <div class="img-text-contain">
+                        <img src="./assets/Vectorqueans.png" />
+                        <p>Ask Question</p>
+                        <img src="./assets/text-review.png" />
+                        <p>Text Review</p>
+                        <img src="./assets/courses.png" />
+                        <p>Courses</p>
+                        <img src="./assets/location.png" />
+                        <p>Contact</p>
+                        <p>Follow</p>
+                    </div>
+
+
+                </div>
+                <!-- .............**********.............. -->
+                <div class="college-container">
+                    <div class="image-text-container">
+                        <img cass="" src="./assets/informatics.png" />
+                        <p class="informatics-text">Informatics College Pokhara,</p>
+                        <p>Pokhara</p>
+
+                        <img class="location-img" src="./assets/location.png" />
+                        <p>Matepani,Pokhara</p>
+                    </div>
+                    <ul>
+                        <li>BBA in International Business</li>
+                        <li>B.Sc.(HONS) in computing</li>
+                        <li>BBA in marketing</li>
+                        <li>BBA in Accounting & Finance</li>
+
+                    </ul>
+                    <div class="img-text-contain">
+                        <img src="./assets/Vectorqueans.png" />
+                        <p>Ask Question</p>
+                        <img src="./assets/text-review.png" />
+                        <p>Text Review</p>
+                        <img src="./assets/courses.png" />
+                        <p>Courses</p>
+                        <img src="./assets/location.png" />
+                        <p>Contact</p>
+                        <p>Follow</p>
+                    </div>
+
+
+                </div>
+                <!-- .............**********.............. -->
+                <div class="college-container">
+                    <div class="image-text-container">
+                        <img cass="" src="./assets/informatics.png" />
+                        <p class="informatics-text">Informatics College Pokhara,</p>
+                        <p>Pokhara</p>
+
+                        <img class="location-img" src="./assets/location.png" />
+                        <p>Matepani,Pokhara</p>
+                    </div>
+                    <ul>
+                        <li>BBA in International Business</li>
+                        <li>B.Sc.(HONS) in computing</li>
+                        <li>BBA in marketing</li>
+                        <li>BBA in Accounting & Finance</li>
+
+                    </ul>
+                    <div class="img-text-contain">
+                        <img src="./assets/Vectorqueans.png" />
+                        <p>Ask Question</p>
+                        <img src="./assets/text-review.png" />
+                        <p>Text Review</p>
+                        <img src="./assets/courses.png" />
+                        <p>Courses</p>
+                        <img src="./assets/location.png" />
+                        <p>Contact</p>
+                        <p>Follow</p>
+                    </div>
+
+
+                </div>
+                <!-- .............**********.............. -->
+                <div class="college-container">
+                    <div class="image-text-container">
+                        <img cass="" src="./assets/informatics.png" />
+                        <p class="informatics-text">Informatics College Pokhara,</p>
+                        <p>Pokhara</p>
+
+                        <img class="location-img" src="./assets/location.png" />
+                        <p>Matepani,Pokhara</p>
+                    </div>
+                    <ul>
+                        <li>BBA in International Business</li>
+                        <li>B.Sc.(HONS) in computing</li>
+                        <li>BBA in marketing</li>
+                        <li>BBA in Accounting & Finance</li>
+
+                    </ul>
+                    <div class="img-text-contain">
+                        <img src="./assets/Vectorqueans.png" />
+                        <p>Ask Question</p>
+                        <img src="./assets/text-review.png" />
+                        <p>Text Review</p>
+                        <img src="./assets/courses.png" />
+                        <p>Courses</p>
+                        <img src="./assets/location.png" />
+                        <p>Contact</p>
+                        <p>Follow</p>
+                    </div>
+
+
+                </div>
+                <!-- .............**********.............. -->
+                <div class="college-container">
+                    <div class="image-text-container">
+                        <img cass="" src="./assets/informatics.png" />
+                        <p class="informatics-text">Informatics College Pokhara,</p>
+                        <p>Pokhara</p>
+
+                        <img class="location-img" src="./assets/location.png" />
+                        <p>Matepani,Pokhara</p>
+                    </div>
+                    <ul>
+                        <li>BBA in International Business</li>
+                        <li>B.Sc.(HONS) in computing</li>
+                        <li>BBA in marketing</li>
+                        <li>BBA in Accounting & Finance</li>
+
+                    </ul>
+                    <div class="img-text-contain">
+                        <img src="./assets/Vectorqueans.png" />
+                        <p>Ask Question</p>
+                        <img src="./assets/text-review.png" />
+                        <p>Text Review</p>
+                        <img src="./assets/courses.png" />
+                        <p>Courses</p>
+                        <img src="./assets/location.png" />
+                        <p>Contact</p>
+                        <p>Follow</p>
+                    </div>
+
+
+                </div>
+                <!-- .............**********.............. -->
+                <div class="college-container">
+                    <div class="image-text-container">
+                        <img cass="" src="./assets/informatics.png" />
+                        <p class="informatics-text">Informatics College Pokhara,</p>
+                        <p>Pokhara</p>
+
+                        <img class="location-img" src="./assets/location.png" />
+                        <p>Matepani,Pokhara</p>
+                    </div>
+                    <ul>
+                        <li>BBA in International Business</li>
+                        <li>B.Sc.(HONS) in computing</li>
+                        <li>BBA in marketing</li>
+                        <li>BBA in Accounting & Finance</li>
+
+                    </ul>
+                    <div class="img-text-contain">
+                        <img src="./assets/Vectorqueans.png" />
+                        <p>Ask Question</p>
+                        <img src="./assets/text-review.png" />
+                        <p>Text Review</p>
+                        <img src="./assets/courses.png" />
+                        <p>Courses</p>
+                        <img src="./assets/location.png" />
+                        <p>Contact</p>
+                        <p>Follow</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- .............**********.............. -->
+
+
+    <!-- .............**********footer-start.............. -->
+    <footer>
+        <div class="footer-left">
+            <div class="left-footer-sublinks">
+                <h4>TOP COLLEGES</h4>
+                <hr />
+
+                <p>10+2 Colleges</p>
+                <p>Science Colleges</p>
+                <p>Nursing Colleges</p>
+                <p>BBA Colleges</p>
+                <p>MBA Colleges</p>
+                <p>Hotel Management</p>
+                <p>Management</p>
+                <p>Engineering</p>
+                <p>Medical</p>
+                <p>IT Colleges</p>
+                <p>Education Colleges</p>
+                <p>Arts Colleges</p>
+
+            </div>
+            <div class="left-footer-sublinks">
+                <h4>LATEST UPTADES</h4>
+                <hr />
+                
+                <p>Jobs Vcacancy</p>
+                <p>Result</p>
+                <p>Exam</p>
+                <p>News</p>
+                <p>Admission</p>
+                <p>Events</p>
+                <p>Scholarships</p>
+                <p>Articles</p>
+                <p>Lok Sewa Aayog</p>
+                <p>Technology</p>
+                <p>Motivation</p>
+                <p>Career</p>
+
+            </div>
+            <div class="left-footer-sublinks">
+                <h4>QUICK LINKS</h4>
+                <hr />
+                
+                <p>Home</p>
+                <p>About Us</p>
+                <p>Disclaimer</p>
+                <p>Privacy Policy</p>
+                <p>T&C</p>
+                <p>Contact us</p>
+                <p>College Register</p>
+                <p>College Login</p>
+                <p>Schools</p>
+                <p>Find Colleges</p>
+                <p>Find Institutes</p>
+
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <!-- right side newsletter -->
+            <h3>SUBSCRIBE NEWSLETTER</h3>
+            <hr/>
+            <input type="text" placeholder="First Name.....">
+            <input type="text" placeholder="Middle Name.....">
+            <input type="text" placeholder="Last Name.....">
+            <input type="text" placeholder="Email.....">
+            <p>SUBMIT</p>
+        </div>
+        
+    </footer>
+
+</body>
+
+</html>

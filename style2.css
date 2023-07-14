@@ -1,0 +1,362 @@
+/* * {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+} */
+
+/* .........navigation-bar-start.......... */
+.first-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2A49B5;
+    color: white;
+    padding: 1.5em;
+}
+
+.first-search-icon input {
+    border-radius: 57px;
+    background-color: #EDE9E9;
+}
+
+
+.first-nav-user {
+    display: flex;
+    align-items: center;
+}
+
+.first-nav-user .icon-user {
+    height: 17px;
+    width: 14px;
+
+}
+
+.second-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #F5F5F5;
+    color: #424141;
+    padding: 1.5em;
+    align-items: center;
+    cursor: pointer;
+
+
+}
+
+.second-nav li:hover {
+    transition: 0.5ms;
+    color: #0F2E97;
+}
+
+a {
+    color: white;
+}
+
+.logo {
+    width: 145px;
+    height: 45px;
+}
+
+.second-nav-dropdown .dropdown {
+    width: 15px;
+    height: 13px;
+
+}
+
+.second-nav-dropdown {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.2rem;
+
+}
+
+.second-nav-lists {
+    display: inline-block;
+    position: relative;
+
+}
+
+.dropdown-container ul li:hover {
+    color: red;
+}
+
+.second-nav-lists:hover .dropdown-container {
+    display: block;
+    position: absolute;
+}
+
+.dropdown-container {
+    display: none;
+}
+
+img {
+    width: 27px;
+    height: 28px;
+}
+
+/* input{
+    width: 250px;
+    height: 28px;
+    padding-left:10px;
+}  */
+.first-search-icon {
+    display: flex;
+}
+
+/* .........navigation-bar-end.......... */
+/* .advertise-img{
+    display:flex;
+    justify-content: center;
+} */
+.advertise-img .img-source,
+.img-source2 {
+    width: 50em;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.advertise-img div {
+    display: flex;
+    justify-content: center;
+
+}
+
+.advertise-img .img-source2 {
+    margin-bottom: 3em;
+}
+
+/* .college-container{
+    border:1px solid brown;
+    
+    
+} */
+.college-container .image-text-container {
+    display: flex;
+}
+
+.img-text-contain img {
+    height: 13px;
+    width: 15px;
+    padding-left: 2em;
+
+}
+
+.informatics-img {
+    height: 25px;
+    width: 25px;
+}
+
+.img-text-contain {
+    display: flex;
+}
+
+.location-img {
+    height: 13px;
+    width: 13px;
+}
+
+.image-text-container .informatics-text {
+    font-size: 24px;
+}
+
+.college-container ul li {
+    font-size: 15px;
+    color: #1172BA;
+}
+
+.image-text-container p {
+    font-size: 15px;
+
+}
+
+
+.image-text-container p {
+    display: flex;
+    flex-direction: column;
+}
+
+.college-container {
+    margin: 0.5em;
+    box-shadow: 0px 1px 1px rgb(189, 187, 187);
+    padding: 1em;
+
+}
+
+ .city-name-container img , .main-stream-name-container img , .affilated-container img , .course-name-container img , .course-fee-container img ,.type-clz-container img , .duration-container img{
+    width:13px;
+    height:14px;
+
+    
+} 
+/* .type-clz-container,
+.duration-container {
+    display: flex;
+    flex-direction: column;
+   
+
+} */
+
+/* .list-container-city .city-name-container {
+    display: flex;
+    flex-direction: column;
+} */
+
+.list-container-city .city-name-container, .duration-container,.type-clz-container, .main-stream-name-container ,.affilated-container,.course-name-container,.course-fee-container{
+    display:flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+.list-container-city .city-name-container p, .main-stream-name-container p ,.affilated-container p,.course-name-container p,.course-fee-container p , .type-clz-container p,.duration-container p{
+    color:#1172BA;
+    box-shadow: 1px 2px 1px rgba(215, 213, 213, 0.721);
+    border: none !important;
+    background-color: whitesmoke;
+    display: flex;
+} 
+  .list-container-city{
+    width:19%
+} 
+
+.scroll {
+    display: flex;
+    column-gap: 5em;
+    justify-content: center;
+}
+
+.scroll-college-container{
+height: 40em;
+overflow-y:scroll;
+scrollbar-width: none;
+
+}
+
+.scroll-college-container::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
+
+ .main-sub-page {
+    background-color: #EDE9E9;
+}
+
+.college-container {
+    background-color: whitesmoke !important;
+}
+.city , .main,.afilated,.course,.fee,.type,.duration{
+    display:flex;
+    flex-direction: column;
+    overflow-y:scroll;
+    height:6.8em;
+    scrollbar-width: none;
+}
+h1{
+    display: flex;
+    justify-content: space-around;
+    color: #1172BA;
+}
+.list-container-city img {
+    color: #1172BA;
+}
+.list-container-city p img{
+    width:13px;
+    height:14px;
+    color: #1172BA; 
+}
+
+.affilated-container .afilated ,.course-name-container .course
+,.course-fee-container .fee ,.type-clz-container .type ,.duration-container .duration{
+    display:none;
+}
+.affilated-container.active .afilated ,.course-name-container.active .course
+,.course-fee-container.active .fee, .type-clz-container.active .type,.duration-container.active .duration{
+    display:inline-flex;
+}
+.list-container-city .city-name-container ,.main-stream-name-container ,.affilated-container,
+.course-name-container,.course-fee-container ,.type-clz-container ,.duration-container{
+    background-color: #EDE9E9;
+}
+.duration-container .duration{
+    height:auto !important;
+}
+.type-clz-container .type{
+    height:auto !important;
+}
+/* .......footerstart......... */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: #11ABCD;
+    column-gap: 5em;
+}
+/* .footer-left{
+    display: flex;
+     gap: 2rem; 
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+} */
+.footer-left{
+    display:flex;
+    gap:4rem;
+    padding-top: 2em;
+    color:white;
+    
+}
+.footer-left p:hover{
+    transition:all 2ms;
+    color:black;
+}
+ .footer-left h4,p{
+    margin:10px;
+    
+} 
+ hr{
+    color:rgba(221, 218, 218, 0.603);
+    border: 1px solid rgba(222, 219, 219, 0.804);
+}
+
+.footer-right{
+    border: 1px solid rgba(221, 218, 218, 0.603);
+    display: flex;
+    flex-direction:column;
+    padding:1.5em;
+    color:whitesmoke;
+
+    
+}
+
+
+.footer-right input{
+    background-color: #11ABCD;
+    color:rgb(255, 253, 253);
+    border:1px solid rgba(222, 219, 219, 0.804);
+    padding: 10px;
+
+}
+.footer-right input:hover{
+    transition:all 2ms;
+    color:black;
+}
+hr{
+    display: flex;
+
+
+}
+h3{
+    padding: 10px;
+    display:flex;
+    justify-content: center;
+}
+.footer-right p{
+    display: flex;
+    justify-content: right;
+    padding-top: 1em;
+}
+.second-nav li a{
+    color:#424141!important;
+    text-decoration: none;
+}

@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewSport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="projectstyle.css" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-decoration: none;
+
+        }
+
+        .nav-bar {
+            display: flex;
+            background-color: #2A49B5;
+            color: whitesmoke;
+            padding: 0.5em;
+            justify-content: space-around;
+            gap: 40em;
+        }
+
+        .nav-bar a {
+            color: whitesmoke;
+            padding: 1em;
+
+        }
+        .nav-icons {
+            padding: 1em;
+            
+
+        }
+        .first-search-icon, .first-nav-user{
+            padding: 0.5em;
+        }
+
+        .nav-bar-right {
+            display: flex;
+            gap: 1em;
+        }
+
+        .first-search-icon p {
+            display: flex;
+
+        }
+
+        .first-search-icon input {
+            padding: 4px;
+            border-radius: 47px;
+            padding-left: 2.5em;
+        }
+
+        .first-search-icon p img {
+            position: relative;
+            right: -27px;
+            height: 1.2em;
+            width: 1.1em;
+            padding-top: 5px;
+
+        }
+
+        .first-nav-user p img {
+            width: 12px;
+            height: 14px;
+        }
+
+        .first-nav-user p {
+            display: flex;
+            /* gap: 3px; */
+        }
+
+        .second-nav ul {
+            color: #424141;
+            background-color: #F5F5F5;
+            display: flex;
+            justify-content: space-around;
+            padding: 1em;
+        }
+
+        .second-nav ul li,
+        .second-nav-dropdown span {
+            display: flex;
+            padding-top: 10px;
+        }
+
+        .second-nav-dropdown span img {
+            width: 15px;
+            height: 13px;
+            padding-top: 3px;
+
+        }
+
+        .second-nav ul li a {
+            color: #424141;
+        }
+
+        .second-nav ul li:hover,
+        .second-nav ul li a:hover,
+        .second-nav-dropdown span:hover {
+            transition: all 0.2s;
+            color: #2A49B5;
+        }
+
+        .dropdown-container {
+            background-color: rgba(217, 217, 217, 1);
+        }
+
+        .dropdown-container span {
+            color: black;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .dropdown-container span:hover {
+            transition: all 0.2s;
+            color: rgba(163, 23, 23, 1);
+        }
+
+        .second-nav-dropdown .dropdown-container {
+            display: none;
+            position: absolute;
+        }
+
+        /* .second-nav-dropdown.active.dropdown-container {
+            display: flex;
+            flex-direction: column;
+        } */
+
+        .second-nav-dropdown:hover .dropdown-container {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <a href="2ndpage.html">2nd page</a> -->
+    <!-- <nav>
+        
+        <ul class="first-nav">
+            <a href="#">info@college.com</a>
+            <div class="nav-icons">
+                <img src="./assets/facebook.png" />
+                <img src="./assets/instagram.png" />
+                <img src="./assets/twiter.png" />
+                <img src="./assets/whatsapp.png" />
+            </div>
+            <div class="first-search-icon">
+                <img class="nav-search" src="./assets/search.png" />
+                <input type="text" placeholder="Text Here......" />
+            </div>
+            <div class="first-nav-user">
+                <img class="icon-user" src="./assets/user.png" />
+                <li>login/register</li>
+            </div>
+        </ul>
+        <ul class="second-nav">
+            <img class="logo" src="./assets/logo.png" />
+            <li>Home</li>
+            <li>
+                <a href="2ndpage.html">Colleges</a>
+            </li>
+            <li>Schools</li>
+            <li><a href="admission-page.html">Admission</a></li>
+            <li>Institutes</li>
+            <li>Scholarships</li>
+            <li>Articles</li>
+            <li>Exams</li>
+            <li>News</li>
+            <li>Jobs</li>
+            <div class="second-nav-dropdown second-nav-lists">
+                <span class="events-tag">Events <img class="dropdown" src="./assets/dropdown.jpg" /></span>
+                <li>
+                    <div class="dropdown-container ">
+                        <ul>
+                            <li>Sports</li>
+                            <li>Healthcare</li>
+                            <li>Educational Tour</li>
+                            <li>OJT trainning</li>
+                            <li>Motivational Speech</li>
+
+                        </ul>
+                    </div>
+                </li>
+
+            </div>
+            <li>Results</li>
+
+        </ul>
+
+
+    </nav> -->
+
+
+    <nav>
+        <div class="nav-bar">
+
+            <a href="#">info@college.com</a>
+            <div class="nav-bar-right">
+                <div class="nav-icons">
+                    <img src="./assets/facebook.png" />
+                    <img src="./assets/instagram.png" />
+                    <img src="./assets/twiter.png" />
+                    <img src="./assets/whatsapp.png" />
+                </div>
+                <div class="first-search-icon">
+                    <p> <img src="./assets/search2.png" /><input type="text" placeholder="Text Here......" /></p>
+                </div>
+                <div class="first-nav-user">
+                    <p> <img src="./assets/user.png" />login/register</p>
+                </div>
+            </div>
+        </div>
+        <div class="second-nav">
+            <ul>
+                <img class="logo" src="./assets/logo.png" />
+                <li>Home</li>
+                <li>
+                    <a href="2ndpage.html">Colleges</a>
+                </li>
+                <li>Schools</li>
+                <li><a href="admission-page.html">Admission</a></li>
+                <li>Institutes</li>
+                <li>Scholarships</li>
+                <li>Articles</li>
+                <li>Exams</li>
+                <li>News</li>
+                <li>Jobs</li>
+                <div class="second-nav-dropdown second-nav-lists">
+                    <span>Events <img src="./assets/dropdown.jpg" /></span>
+                    <li>
+                        <div class="dropdown-container ">
+
+                            <span>Sports</span>
+                            <span>Healthcare</span>
+                            <span>Educational Tour</span>
+                            <span>OJT trainning</span>
+                            <span>Motivational Speech</span>
+
+
+                        </div>
+                    </li>
+
+                </div>
+                <li>Results</li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+    <div class="main">
+        <div class="advertise-img ">
+            <div>
+                <img src="./assets/advertise.gif" class="img-source" />
+            </div>
+            <div>
+                <img src="./assets/adv..gif" class="img-source2" />
+
+            </div>
+        </div>
+
+        <div class="box">
+            <ul class="check-box">
+                <li>COLLEGES</li>
+                <li>SCHOOLS</li>
+                <li>INSTITUTES</li>
+            </ul>
+            <div class="search-box">
+                <input type="text" placeholder="Search Colleges...... " />
+                <li>Search</li>
+            </div>
+        </div>
+        <div class="box-container">
+            <div><img src="./assets/management.png" class="management-box" />
+                MANAGEMENT<br />
+                1202 Colleges </div>
+            <div><img src="./assets/arts.png" class="management-box" />
+                ARTS<br />
+                1202 Colleges </div>
+
+            <div><img src="./assets/Education.png" class="management-box" />
+                EDUCATION<br />
+                1202 Colleges </div>
+
+            <div><img src="./assets/Engineering.png" class="management-box" />
+                ENGINEERING<br />
+                1202 Colleges </div>
+
+            <div><img src="./assets/+2programs.png" class="management-box" />
+                +2 PROGRAMS<br />
+                1202 Colleges </div>
+
+            <div><img src="./assets/Science.png" class="management-box" />
+                SCIENCE<br />
+                1202 Colleges </div>
+        </div>
+
+        <div class="box-container-2">
+            <div><img src="./assets/IT.png" class="management-box" />
+                INFORMATION TECHNOLOGY<br />
+                1202 Colleges </div>
+
+            <div><img src="./assets/MBA.png" class="management-box" />
+                MBA<br />
+                1202 Colleges </div>
+
+            <div><img src="./assets/forestrry.png" class="management-box" />
+                FORESTRY<br />
+                1202 Colleges </div>
+
+            <div><img src="./assets/design.png" class="management-box" />
+                DESIGN<br />
+                1202 Colleges </div>
+
+            <div><img src="./assets/medical.png" class="management-box" />
+                MEDICAL<br />
+                1202 Colleges </div>
+            <div><img src="./assets/architecture.png" class="management-box" />
+                ARCHITECTURE<br />
+                1202 Colleges </div>
+        </div>
+        <div class="box-container-3">
+            <div><img src="./assets/Agriculture.png" class="management-box" />
+                AGRICULTURE<br />
+                1202 Colleges </div>
+            <div><img src="./assets/dental.png" class="management-box" />
+                DENTAL<br />
+                1202 Colleges </div>
+            <div><img src="./assets/nurse.png" class="management-box" />
+                NURSING<br />
+                1202 Colleges </div>
+            <div><img src="./assets/law.png" class="management-box" />
+                LAW<br />
+                1202 Colleges </div>
+
+            <div><img src="./assets/csit.png" class="management-box" />
+                BSC CSIT<br />
+                1202 Colleges </div>
+            <div><img src="./assets/computer.png" class="management-box" />
+                COMPUTER APPLICATION<br />
+                1202 Colleges </div>
+
+        </div>
+        <div class="div-container">
+            <div class="first-div">
+                <span class="first-div-text">Important Fact About Us<br /></span>
+                <div class="first-div-img">
+                    <div class="text">
+                        <img src="./assets/Framecolleges.png" /><br />
+
+                        <span class="node1-first-div"> 2710<sub>+</sub><br /></span>
+                        <span class="node2-first-div">Colleges</span>
+                    </div>
+                    <div class="text">
+                        <img src="./assets/Vectorschools.png" /><br />
+                        <span class="node1-first-div"> 2710<sub>+</sub><br /></span>
+                        <span class="node2-first-div">Schools</span>
+                    </div>
+                    <div class="text">
+                        <img src="./assets/Vectorinstitute.png" /><br />
+                        <span class="node1-first-div"> 2710<sub>+</sub><br /></span>
+                        <span class="node2-first-div">Institute</span>
+                    </div>
+                    <div class="text">
+                        <img src="./assets/Vectorqueans.png" /><br />
+                        <span class="node1-first-div"> 2710<sub>+</sub><br /></span>
+                        <span class="node2-first-div">Questions Answered</span>
+                    </div>
+                </div>
+            </div>
+            <div class="second-div">
+                <div class="child-second-div">
+                    <div class="sub-second-div">
+                        <div class="sub-div-container">
+                            <b> 28</b>
+                            MAY
+                            2023
+                        </div>
+
+                        MSc Ag. AgriBusiness Mgmt. and<br />
+                        MSc Meat Technology Admission <br />
+                        Notice from HICAST<br />
+                        <img src="./assets/clock.png" />
+                        2023-05-31
+
+                    </div>
+
+                    <div class="sub-second-div">
+                        <div class="sub-div-container">
+                            <b> 28</b>
+                            MAY
+                            2023
+                        </div>
+
+                        MSc Ag. AgriBusiness Mgmt. and<br />
+                        MSc Meat Technology Admission <br />
+                        Notice from HICAST<br />
+
+                        2023-05-31
+
+                    </div>
+
+                    <div class="sub-second-div">
+                        <div class="sub-div-container">
+                            <b> 28</b>
+                            MAY
+                            2023
+                        </div>
+
+                        MSc Ag. AgriBusiness Mgmt. and<br />
+                        MSc Meat Technology Admission <br />
+                        Notice from HICAST<br />
+
+                        2023-05-31
+
+                    </div>
+
+                </div>
+                <div class="sibling-second-div">
+                    <div class="sub-second-div">
+                        <div class="sub-div-container">
+                            <b> 28</b>
+                            MAY
+                            2023
+                        </div>
+
+                        MSc Ag. AgriBusiness Mgmt. and<br />
+                        MSc Meat Technology Admission <br />
+                        Notice from HICAST<br />
+
+                        2023-05-31
+
+                    </div>
+
+                    <div class="sub-second-div">
+                        <div class="sub-div-container">
+                            <b> 28</b>
+                            MAY
+                            2023
+                        </div>
+
+                        MSc Ag. AgriBusiness Mgmt. and<br />
+                        MSc Meat Technology Admission <br />
+                        Notice from HICAST<br />
+
+                        2023-05-31
+
+                    </div>
+
+                    <div class="sub-second-div">
+                        <div class="sub-div-container">
+                            <b> 28</b>
+                            MAY
+                            2023
+                        </div>
+
+                        MSc Ag. AgriBusiness Mgmt. and<br />
+                        MSc Meat Technology Admission <br />
+                        Notice from HICAST<br />
+
+                        2023-05-31
+
+                    </div>
+
+                </div>
+                <span class="view1">view all</span>
+                <span class="view2">view all</span>
+                <span class="view3">view all</span>
+            </div>
+
+            <div class="third-div">
+
+                <span>Featured Colleges</span>
+                <!-- ..............**************.................... -->
+                <div class="third-div-container1">
+                    <div class="child-third-div">
+                        <img class="british-clz" src="./assets/britishclz.png" />
+                        <div class="container-third-div">
+                            <span class="child-third-div-text1">Informatics College Pokhara</span>
+                            <div class="sub-logo-text">
+                                <img class="location" src="./assets/location.png" />Matepani,Pokhara
+                            </div>
+                            <div class="sub-logo">
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/2sidearrow.png" />
+                                <img class="mini-logo" src="./assets/heart.png" />
+                                <img class="mini-logo" src="./assets/bonding.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ..............**************.................... -->
+                    <div class="child-third-div">
+                        <img class="british-clz" src="./assets/britishclz.png" />
+                        <div class="container-third-div">
+                            <span class="child-third-div-text1">Informatics College Pokhara</span>
+                            <div class="sub-logo-text">
+                                <img class="location" src="./assets/location.png" />Matepani,Pokhara
+                            </div>
+                            <div class="sub-logo">
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/2sidearrow.png" />
+                                <img class="mini-logo" src="./assets/heart.png" />
+                                <img class="mini-logo" src="./assets/bonding.png" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ..............**************.................... -->
+                    <div class="child-third-div">
+                        <img class="british-clz" src="./assets/britishclz.png" />
+                        <div class="container-third-div">
+                            <span class="child-third-div-text1">Informatics College Pokhara</span>
+                            <div class="sub-logo-text">
+                                <img class="location" src="./assets/location.png" />Matepani,Pokhara
+                            </div>
+                            <div class="sub-logo">
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/2sidearrow.png" />
+                                <img class="mini-logo" src="./assets/heart.png" />
+                                <img class="mini-logo" src="./assets/bonding.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ..............**************.................... -->
+
+                    <div class="child-third-div">
+                        <img class="british-clz" src="./assets/britishclz.png" />
+                        <div class="container-third-div">
+                            <span class="child-third-div-text1">Informatics College Pokhara</span>
+                            <div class="sub-logo-text">
+                                <img class="location" src="./assets/location.png" />Matepani,Pokhara
+                            </div>
+                            <div class="sub-logo">
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/2sidearrow.png" />
+                                <img class="mini-logo" src="./assets/heart.png" />
+                                <img class="mini-logo" src="./assets/bonding.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ..............**************.................... -->
+                <div class="third-div-container2">
+
+                    <div class="child-third-div">
+                        <img class="british-clz" src="./assets/britishclz.png" />
+                        <div class="container-third-div">
+                            <span class="child-third-div-text1">Informatics College Pokhara</span>
+                            <div class="sub-logo-text">
+                                <img class="location" src="./assets/location.png" />Matepani,Pokhara
+                            </div>
+                            <div class="sub-logo">
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/2sidearrow.png" />
+                                <img class="mini-logo" src="./assets/heart.png" />
+                                <img class="mini-logo" src="./assets/bonding.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ..............**************.................... -->
+                    <div class="child-third-div">
+                        <img class="british-clz" src="./assets/britishclz.png" />
+                        <div class="container-third-div">
+                            <span class="child-third-div-text1">Informatics College Pokhara</span>
+                            <div class="sub-logo-text">
+                                <img class="location" src="./assets/location.png" />Matepani,Pokhara
+                            </div>
+                            <div class="sub-logo">
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/2sidearrow.png" />
+                                <img class="mini-logo" src="./assets/heart.png" />
+                                <img class="mini-logo" src="./assets/bonding.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="child-third-div">
+                        <img class="british-clz" src="./assets/britishclz.png" />
+                        <div class="container-third-div">
+                            <span class="child-third-div-text1">Informatics College Pokhara</span>
+                            <div class="sub-logo-text">
+                                <img class="location" src="./assets/location.png" />Matepani,Pokhara
+                            </div>
+                            <div class="sub-logo">
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/2sidearrow.png" />
+                                <img class="mini-logo" src="./assets/heart.png" />
+                                <img class="mini-logo" src="./assets/bonding.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ..............**************.................... -->
+                    <div class="child-third-div">
+                        <img class="british-clz" src="./assets/britishclz.png" />
+                        <div class="container-third-div">
+                            <span class="child-third-div-text1">Informatics College Pokhara</span>
+                            <div class="sub-logo-text">
+                                <img class="location" src="./assets/location.png" />Matepani,Pokhara
+                            </div>
+                            <div class="sub-logo">
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/star.png" />
+                                <img class="mini-logo" src="./assets/2sidearrow.png" />
+                                <img class="mini-logo" src="./assets/heart.png" />
+                                <img class="mini-logo" src="./assets/bonding.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <footer>
+        <div class="footer-left">
+            <div class="left-footer-sublinks">
+                <h4>TOP COLLEGES</h4>
+                <hr />
+
+                <p>10+2 Colleges</p>
+                <p>Science Colleges</p>
+                <p>Nursing Colleges</p>
+                <p>BBA Colleges</p>
+                <p>MBA Colleges</p>
+                <p>Hotel Management</p>
+                <p>Management</p>
+                <p>Engineering</p>
+                <p>Medical</p>
+                <p>IT Colleges</p>
+                <p>Education Colleges</p>
+                <p>Arts Colleges</p>
+
+            </div>
+            <div class="left-footer-sublinks">
+                <h4>LATEST UPTADES</h4>
+                <hr />
+
+                <p>Jobs Vcacancy</p>
+                <p>Result</p>
+                <p>Exam</p>
+                <p>News</p>
+                <p>Admission</p>
+                <p>Events</p>
+                <p>Scholarships</p>
+                <p>Articles</p>
+                <p>Lok Sewa Aayog</p>
+                <p>Technology</p>
+                <p>Motivation</p>
+                <p>Career</p>
+
+            </div>
+            <div class="left-footer-sublinks">
+                <h4>QUICK LINKS</h4>
+                <hr />
+
+                <p>Home</p>
+                <p>About Us</p>
+                <p>Disclaimer</p>
+                <p>Privacy Policy</p>
+                <p>T&C</p>
+                <p>Contact us</p>
+                <p>College Register</p>
+                <p>College Login</p>
+                <p>Schools</p>
+                <p>Find Colleges</p>
+                <p>Find Institutes</p>
+
+            </div>
+        </div>
+        <div class="footer-right">
+            <!-- right side newsletter -->
+            <h3>SUBSCRIBE NEWSLETTER</h3>
+            <hr />
+            <input type="text" placeholder="First Name.....">
+            <input type="text" placeholder="Middle Name.....">
+            <input type="text" placeholder="Last Name.....">
+            <input type="text" placeholder="Email.....">
+            <p>SUBMIT</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

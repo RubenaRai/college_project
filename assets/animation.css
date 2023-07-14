@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.animation-container {
+
+    width: 19em;
+    height: 14em;
+    background-color: red;
+    position: relative;
+    animation-name: sinchan;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sinchan {
+    from {
+
+        background-color: yellow;
+    }
+
+    to {
+        background-color: blue;
+    }
+}
+
+.animation-container1 {
+    width: 19em;
+    height: 14em;
+    background-color: red;
+    position: relative;
+    animation-name: box;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes box {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 50%;
+        top: 0px;
+    }
+
+    /* 50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;} */
+}
+
+.animation-container1 p {
+    font-size:2em ;
+    text-align: center;
+    color: whitesmoke;
+    animation-name: text;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes text {
+    from{
+        color: rgb(18, 18, 18);
+    }
+    to{
+        color: rgb(42, 225, 137);
+    }
+}
+
+.animation-container2:before {
+    content: 'sinchan';
+    font-size: 4em;
+    color: brown;
+}
+
+.animation-container2::first-letter {
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.animation-container2 img {
+    width: 15em;
+    height: 13em;
+    animation-name: image;
+    position: relative;
+    /* padding-left:13em; */
+    animation-duration: 4s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes image {
+    0% {
+        left: 0;
+        top: 0;
+
+    }
+
+    25% {
+        left: 500px;
+        top: 0px;
+
+    }
+
+    50% {
+        left: 500px;
+        top: 500px;
+
+    }
+
+    75% {
+        left: 0;
+        top: 500px;
+
+    }
+
+    100% {
+        left: 0;
+        top: 0px;
+
+    }
+
+}
+
+.animation-container3 img {
+    transform: rotate(45deg);
+    width: 15em;
+    height: 13em;
+    padding: 4em;
+}
+.animation-container4 img {
+    width: 10em;
+    height: 9em;
+    box-shadow: 0px 3px 8px gray ;
+    transition:width 2s, height 2s ,transform 2s;
+}
+.animation-container4 img:hover{
+    width: 20em;
+    height: 18em;
+    transform:rotate(360deg);
+}
+.animation-transition{
+    display:flex;
+}
