@@ -133,9 +133,9 @@ font-size: 19px;
 .admission-box-container{
     background-color: black;
     color:white;
-    display:flex;
-    padding: 2em;
-    height: 43%;
+    display:inline-flex;
+    padding: 1em;
+    /* height: 43%; */
    
     /* opacity: 0.4; */
 }
@@ -154,7 +154,9 @@ font-size: 19px;
     /* column-gap: 2em; */
 
 }
-
+.right-box-container-buttom-right ,.right-box-container-buttom-left{
+    padding: 3em;
+}
 .main-whitebox-container{
     background-color:rgb(214, 212, 212);
     display: flex;
@@ -212,24 +214,16 @@ font-size: 19px;
     padding-top: 10px;
 
 }
-/* .kathmandu{
-    display: flex;
-    flex-direction: column;
-} */
+
+   
 .main-admission-box-container{
     display: flex;
     justify-content: center;
-    column-gap: 1em;
+    /* column-gap: 1em; */
     
 }
 
-.white-box-container{
-    display: flex;
-    flex-direction: column; 
-     /* gap:1em;
-     padding-bottom: 2em; */
 
-}
 /* ..........footer start.........*/
 footer{
     display: flex;
@@ -322,12 +316,13 @@ footer{
     font-size: 19px;
     text-shadow: rgba(147, 142, 142, 0.70);
     position:relative;
-    bottom:80px;
+    bottom:70px;
 
 }
+
 .white-box-container-text h5{
     position:relative;
-    bottom:70px;
+    bottom:0px;
 }
 
 .admission-box-container-text h4:hover , .white-box-container-text h5:hover{
@@ -335,13 +330,22 @@ footer{
     color:#0F2E97;
     
 }
-
-.admission-box-container-text {
+ 
+.main-left-right-white-box-container{
+    display: inline-flex;
     
-    display: flex;
+
+}
+.main-whitebox-container{
+    display: inline-flex;
     flex-direction: column;
+
+
 }
 
-
-
-
+.white-box-container{
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+    justify-content:space-around;
+}
