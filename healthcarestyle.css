@@ -230,11 +230,17 @@ footer{
     display: inline-flex;
     flex-direction: column;
     gap: 0.3rem;
+    
+}
+.health-care-container ul li{
+    margin:1em;
 }
 
 .health-care-container ul li:hover{
     transition:all 0.2s;
     color:rgb(197, 12, 12);
 }
-
+.medical-assistant li:hover{
+    background-image: url(./assets/medical.png);
+}
 
