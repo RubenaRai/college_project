@@ -240,7 +240,31 @@ footer{
     transition:all 0.2s;
     color:rgb(197, 12, 12);
 }
-.medical-assistant li:hover{
-    background-image: url(./assets/medical.png);
+.img-medical-assistant {
+    display: flex;
+   max-width:38em;
+   position:relative;
+   margin: 0 auto;
+}
+.img-medical-assistant span{
+    position:absolute;
+    color:black;
+    bottom:20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.img-medical-assistant img{
+    width: 100%;
+    height:28em;
+
 }
 
+.img-medical-assistant{
+    display: none;
+}
+.medical-assistant li:hover .img-medical-assistant{
+    transition: all 2s;
+    display:inline-flex ;
+}
+
+ 
