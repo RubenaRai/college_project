@@ -11,7 +11,7 @@
 }
 
 /* navigation bar*/
-/* .first-nav{
+ .first-nav{
     display:flex;
     justify-content: space-around;
     background-color:#2A49B5 ;
@@ -100,17 +100,18 @@ input{
 /*.first-nav .first-search-icon{
     align-items: center;
 }*/
-*/ .check-box li {
-    display: inline;
+.check-box li {
+    display: inline-flex;
     border: 1px solid rgb(93, 91, 91);
     padding: 1.2em;
     background-color: #D7D7D7;
-
 }
 
 .box .check-box {
-    text-align: left;
-    padding-left: 20.5%;
+    display: flex;
+    justify-content: center;
+    position:relative;
+    left:-11.75%;
 }
 
 .search-box {
@@ -271,30 +272,32 @@ input{
 .second-div .sub-second-div {
     background-color: #EDE9E9;
     border: 1px solid #EDE9E9;
-    height: 6em;
-    width: 20em;
-    padding-left: 1em;
 
 }
 
 .sub-second-div .sub-div-container {
     border: 4px solid #1172BA;
-    width: 55px;
-    height: 74px;
-
+   
 }
+
 
 .sub-second-div {
     display: flex;
-    padding: 10px;
-    justify-content: space-around;
-    align-items: center;
-}
 
+    padding: 10px;
+    
+}
+.view-container{
+    display: flex;
+    justify-content: center;
+}
 .sub-div-container b {
     color: #1172BA;
     font-size: 19px;
 
+}
+.sub-div-container{
+    padding:10px;
 }
 
 .sub-div-container,
@@ -311,28 +314,15 @@ b {
 
 }
 
-.child-second-div {
+.full-second-text {
     display: flex;
-    justify-content: space-around;
+    gap:1em;
+    justify-content: center;
+    padding-top: 2em;
 }
 
-.second-div .child-second-div,
-.second-div .sibling-second-div {
-    display: flex;
-    font-family: '', 'Arial Narrow', Arial, sans-serif;
-    align-items: center;
 
-}
 
-.sibling-second-div {
-    display: flex;
-    justify-content: space-around;
-}
-
-.child-second-div,
-.sibling-second-div {
-    padding-top: 1em;
-}
 
 .sub-second-div:hover {
     transition: all 2ms;
@@ -346,7 +336,7 @@ b {
 
 b {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 
 /*.sub-second-div img{
@@ -361,10 +351,10 @@ b {
 
 }
 
-.second-div,
+/* .second-div,
 .third-div {
     height: 20em;
-}
+} */
 
 
 /* ..........third-div........... */
@@ -436,7 +426,9 @@ b {
     padding-right: 3em;
     margin: 5px;
 }
-
+.right-sub-div-text{
+    padding:10px;
+}
 .third-div-container1,
 .third-div-container2 {
     display: flex;
