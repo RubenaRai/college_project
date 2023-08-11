@@ -88,9 +88,8 @@ img{
     height: 28px;
 }
 input{
-    width: 250px;
+    
     height: 28px;
-    padding-left: 10px;
 }
 .first-search-icon{
     display: flex;
@@ -102,7 +101,6 @@ input{
 }*/
 .check-box li {
     display: inline-flex;
-    border: 1px solid rgb(93, 91, 91);
     padding: 1.2em;
     background-color: #D7D7D7;
 }
@@ -111,33 +109,33 @@ input{
     display: flex;
     justify-content: center;
     position:relative;
-    left:-11.75%;
+    left:-19.80%;
+    gap:1em;
 }
 
 .search-box {
     text-align: center;
+    padding-top: 1em;
 }
 
 .search-box li {
     display: inline;
-    border: 1px solid black;
     padding: 1.2em;
     background-color: #2A49B5;
     color: white;
+    padding-top: 1em;
 }
 
 .search-box input {
-    height: 50px;
+    padding:1em;
+    border:none;
     width: 50em;
     background-color: #D7D7D7;
 
 
 }
 
-.search-box {
-    margin-top: 1.8em;
 
-}
 
 .box-container div,
 .box-container-2 div,
@@ -289,7 +287,8 @@ input{
 }
 .view-container{
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
+    padding:1em;
 }
 .sub-div-container b {
     color: #1172BA;
@@ -343,10 +342,8 @@ b {
     display: inline;
 }*/
 .second-div span {
-    display: inline;
-    text-align: center;
-    padding: 10em;
-    margin-top: 2em;
+    display:flex;
+    justify-content: space-around;
     color: #1172BA;
 
 }
